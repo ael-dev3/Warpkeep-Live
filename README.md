@@ -5,13 +5,15 @@ This public repository serves the generated frontend for the Warpkeep Alpha at
 remain in the private `ael-dev3/Warpkeep` repository.
 
 The current Alpha 0.3.43 payload was built from signed private source commit
-`d1cc6a9f04673e40b98982fae205416644db1181`. It repairs QR sign-in when a
-player's browser clock trails the authentication bridge by a small amount. The
-bridge, session expiry, and gameplay rules are unchanged. The production build
-passed the focused authentication tests, TypeScript, runtime asset checks, Pages
-release configuration checks, Mini App verification, and file-size policy.
-Its `index.html` SHA-256 is
-`24affe33cbd92aa68cd684bd6f5f38c4380bb8c62ca02bd449c22d1b0ce91446`;
+`2d6811a861d42d7ca191ac30e2215176db1adabd`. It retains the bounded
+browser clock-lag repair and distinguishes safe QR exchange failure stages for
+invalid or expired completed requests, network reachability, and timeout. It
+does not change the bridge protocol, session expiry, or gameplay rules. A
+successful owner sign-in still requires a fresh phone-approved check. The
+production build passed 221 focused authentication tests, TypeScript, runtime
+asset checks, Pages release configuration checks, Mini App verification, and
+file-size policy. Its `index.html` SHA-256 is
+`eb1b0eafa2c116e8a6c47956f1e72324a828b17bb2f36740047ab53b8d91d5f3`;
 `404.html` is byte-for-byte identical for single-page app routing.
 
 The original restored Alpha 0.3.43 build came from private source
