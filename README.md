@@ -1,14 +1,40 @@
 # Warpkeep Live
 
-This public repository contains only the generated frontend for the currently live Warpkeep Alpha. The development source and 0.4 release controls remain in the private `ael-dev3/Warpkeep` repository.
+This public repository serves the generated frontend for the Warpkeep Alpha at
+[warpkeep.com](https://warpkeep.com/). Development source and 0.4 release controls
+remain in the private `ael-dev3/Warpkeep` repository.
 
-The deployed Alpha 0.3.43 build was reproduced from private source commit `f39d57c8622077e6543a16e5610d0e4ec73910da`. Its rebuilt `index.html` has SHA-256 `e8139922fac3619edff5cbece46a3d9516b75b2b26801935068459502b57d061`, matching the last successful production deployment. The previous complete Pages artifact has expired, so this does not claim byte-for-byte identity for every asset.
+The current Alpha 0.3.43 payload was built from signed private source commit
+`d1cc6a9f04673e40b98982fae205416644db1181`. It repairs QR sign-in when a
+player's browser clock trails the authentication bridge by a small amount. The
+bridge, session expiry, and gameplay rules are unchanged. The production build
+passed the focused authentication tests, TypeScript, runtime asset checks, Pages
+release configuration checks, Mini App verification, and file-size policy.
+Its `index.html` SHA-256 is
+`24affe33cbd92aa68cd684bd6f5f38c4380bb8c62ca02bd449c22d1b0ce91446`;
+`404.html` is byte-for-byte identical for single-page app routing.
 
-The generated Alpha files were first published in [restoration commit
-`3e9170f`](https://github.com/ael-dev3/Warpkeep-Live/commit/3e9170fdc14e5b73083db7dd381de77236d4f06c).
-Subsequent Alpha restoration commits add release and licensing context without
-changing the generated app files.
+The original restored Alpha 0.3.43 build came from private source
+`f39d57c8622077e6543a16e5610d0e4ec73910da`. Its rebuilt `index.html`
+matched the last successful old production deployment. The complete historical
+Pages artifact had expired, so that match never established byte-for-byte
+identity for every old asset. The restoration was published in
+[`3e9170f`](https://github.com/ael-dev3/Warpkeep-Live/commit/3e9170fdc14e5b73083db7dd381de77236d4f06c).
 
-`CNAME` binds the site to [warpkeep.com](https://warpkeep.com/), `.nojekyll` serves the built files as-is, and `404.html` provides the single-page app fallback. Do not put source, credentials, or unpublished 0.4 builds here. Publish a future release only after its source, generated build, live backend, and release checks are verified.
+`CNAME` binds the site to the apex domain and `.nojekyll` serves the built files
+as-is. This repository contains no private source, credentials, or unpublished
+0.4 build. A future release needs its own reviewed source, generated build,
+backend, deployment, and player-session checks.
 
-Legal texts, notices, and the license inventory came byte-for-byte from the same source commit. The licensing and asset-provenance guides retain the source classifications but identify records that remain in the private development repository. Warpkeep-authored software follows [Apache-2.0](LICENSE); confirmed project-owned creative work follows [CC BY 4.0](LICENSE-CC-BY-4.0). Third-party and unresolved-rights material retains its own terms. The [provenance-required classification](licenses/LicenseRef-Warpkeep-Provenance-Required.txt) is not a license grant. See [licensing](LICENSING.md), [asset provenance](ASSETS-LICENSE.md), the [license inventory](docs/legal/license-inventory.md), [notices](NOTICE), and [trademark scope](TRADEMARKS.md) before reuse.
+The public legal texts, notices, and license inventory came byte-for-byte from
+the restored source and are unchanged by this auth hotfix. The licensing and
+asset-provenance guides retain source classifications while identifying records
+that remain in the private development repository. Warpkeep-authored software
+follows [Apache-2.0](LICENSE); confirmed project-owned creative work follows
+[CC BY 4.0](LICENSE-CC-BY-4.0). Third-party and unresolved-rights material
+retains its own terms. The
+[provenance-required classification](licenses/LicenseRef-Warpkeep-Provenance-Required.txt)
+is not a license grant. See [licensing](LICENSING.md),
+[asset provenance](ASSETS-LICENSE.md), the
+[license inventory](docs/legal/license-inventory.md), [notices](NOTICE), and
+[trademark scope](TRADEMARKS.md) before reuse.
