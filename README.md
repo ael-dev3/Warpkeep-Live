@@ -5,15 +5,17 @@ This public repository serves the generated frontend for the Warpkeep Alpha at
 remain in the private `ael-dev3/Warpkeep` repository.
 
 The current Alpha 0.3.43 payload was built from signed private source commit
-`2d6811a861d42d7ca191ac30e2215176db1adabd`. It retains the bounded
-browser clock-lag repair and distinguishes safe QR exchange failure stages for
-invalid or expired completed requests, network reachability, and timeout. It
-does not change the bridge protocol, session expiry, or gameplay rules. A
+`5f77c3cec555823fd52b73c90080032867fc2ed4`. It retains the bounded
+browser clock-lag repair and now gives specific, privacy-safe QR sign-in
+feedback for invalid or expired requests, network or timeout failures, bridge
+configuration, rejected or throttled exchanges, service unavailability, and
+invalid session responses. It replaces the misleading generic rejection label
+without changing the bridge protocol, session expiry, or gameplay rules. A
 successful owner sign-in still requires a fresh phone-approved check. The
-production build passed 221 focused authentication tests, TypeScript, runtime
-asset checks, Pages release configuration checks, Mini App verification, and
-file-size policy. Its `index.html` SHA-256 is
-`eb1b0eafa2c116e8a6c47956f1e72324a828b17bb2f36740047ab53b8d91d5f3`;
+source passed focused authentication tests, TypeScript, runtime asset checks,
+Pages release configuration checks, Mini App verification, and file-size
+policy. The reviewed build's `index.html` SHA-256 is
+`18658055f4fa1c2376fae34d9d34e400c4bb308f922de48aaeb604a1de0c3a4d`;
 `404.html` is byte-for-byte identical for single-page app routing.
 
 The original restored Alpha 0.3.43 build came from private source
