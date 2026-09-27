@@ -1,5 +1,10 @@
 # Warpkeep Asset Licensing and Provenance
 
+This public release mirror contains generated frontend files. The classifications
+below come from the Alpha 0.3.43 source; references marked `source:` identify
+supporting records retained in the private development repository. Paths under
+`public/` describe the source tree; served asset URLs omit that prefix.
+
 This file records the license and provenance status of runtime media, archived references, generated derivatives, and asset manifests. Repository presence or delivery by Ael does not by itself establish copyright ownership or transferable licensing authority.
 
 ## Active policy
@@ -79,7 +84,7 @@ The Hegemony Mark currency artwork has an explicit CC-BY-4.0 grant in the immuta
 | 128×128 | `public/images/factions/hegemony/marks/hegemony-mark-128.png` — 28,910 bytes, SHA-256 `e694e586f9fa061c2ebcfe0a852f53f20a9b90794c3bbf5fd31d514a83bf5728` | `public/images/factions/hegemony/marks/hegemony-mark-128.webp` — 20,364 bytes, SHA-256 `3cbae6967d54a709efb2e9a455040fdb89b5fb1e682ebeddbfda71d39b0b260e` |
 | 256×256 | `public/images/factions/hegemony/marks/hegemony-mark-256.png` — 104,050 bytes, SHA-256 `8515b544c231a78f41f80731b74caeeca1cd93dbad6313a424f95fe669a25852` | `public/images/factions/hegemony/marks/hegemony-mark-256.webp` — 67,172 bytes, SHA-256 `55814b1b150f268426b1a49bffea5a377ca7a62adad526d2e09c48966428dc86` |
 
-Attribution: **Warpkeep Hegemony Mark currency artwork by the Warpkeep project**, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The grant covers the named source PNG and faithful runtime derivatives to the extent copyright and related rights are controlled by the Warpkeep project. It does not license OpenAI services, names, trademarks, third-party rights, or Warpkeep trademarks and canonical identity. The complete release coordinates, deterministic Sharp/libvips settings, decoded-pixel hashes, alpha audit, and visual QA are in the [runtime manifest](docs/reference/factions/hegemony/2026-07-13-hegemony-mark/runtime-manifest.json).
+Attribution: **Warpkeep Hegemony Mark currency artwork by the Warpkeep project**, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The grant covers the named source PNG and faithful runtime derivatives to the extent copyright and related rights are controlled by the Warpkeep project. It does not license OpenAI services, names, trademarks, third-party rights, or Warpkeep trademarks and canonical identity. The complete release coordinates, deterministic Sharp/libvips settings, decoded-pixel hashes, alpha audit, and visual QA are in the runtime manifest (source: `docs/reference/factions/hegemony/2026-07-13-hegemony-mark/runtime-manifest.json`).
 
 ## Hegemony resource icon provenance
 
@@ -118,7 +123,7 @@ replacement; unexpected directory entries fail closed.
 
 The source attachments and chroma-key intermediates are not committed. Their
 hashes, edit prompts, cleanup parameters, decoded RGBA hashes, alpha profiles,
-and visible bounds are recorded in the [dated gold icon record](docs/reference/resources/2026-07-17-hegemony-gold-icon/manifest.json), [dated food icon record](docs/reference/resources/2026-07-17-hegemony-food-icon/manifest.json), [dated stone icon record](docs/reference/resources/2026-07-17-hegemony-stone-icon/manifest.json), and [dated wood icon record](docs/reference/resources/2026-07-17-hegemony-wood-icon/manifest.json). The reference masters remain under
+and visible bounds are recorded in the dated gold icon record (source: `docs/reference/resources/2026-07-17-hegemony-gold-icon/manifest.json`), dated food icon record (source: `docs/reference/resources/2026-07-17-hegemony-food-icon/manifest.json`), dated stone icon record (source: `docs/reference/resources/2026-07-17-hegemony-stone-icon/manifest.json`), and dated wood icon record (source: `docs/reference/resources/2026-07-17-hegemony-wood-icon/manifest.json`). The reference masters remain under
 `LicenseRef-Warpkeep-Provenance-Required`; neither the provenance masters nor
 their faithful runtime encodings are silently relicensed by their location.
 
@@ -140,8 +145,8 @@ activate gathering.
 
 The exact source attachment and image-generation/chroma-matte intermediates are
 not committed. Their hashes, prompt, cleanup parameters, decoded RGBA hash,
-alpha profile, and visible bounds are recorded in the dated [Gold Mine
-inspection-art record](docs/reference/resources/2026-07-18-hegemony-gold-mine/record-art/manifest.json).
+alpha profile, and visible bounds are recorded in the dated Gold Mine
+inspection-art record (source: `docs/reference/resources/2026-07-18-hegemony-gold-mine/record-art/manifest.json`).
 The live integration mounts the card as decorative inspection art
 only; it grants no resource, currency, reward, entitlement, map-placement, or
 Gold/Marks authority. No Pages deployment is authorized by this record.
@@ -164,8 +169,8 @@ expose a balance, or activate gathering.
 
 The exact source attachment and image-generation/chroma-matte intermediates are
 not committed. Their hashes, prompt, cleanup parameters, decoded RGBA hash,
-alpha profile, and visible bounds are recorded in the dated [Stone Quarry
-inspection-art record](docs/reference/resources/2026-07-18-hegemony-stone-quarry/record-art/manifest.json).
+alpha profile, and visible bounds are recorded in the dated Stone Quarry
+inspection-art record (source: `docs/reference/resources/2026-07-18-hegemony-stone-quarry/record-art/manifest.json`).
 The prepared panel is mounted only through the separately reviewed canonical
 Stone-site integration; it grants no resource, currency, reward, entitlement,
 map-placement, Stone/Marks authority, or Pages deployment.
@@ -194,7 +199,7 @@ Compact files have 512×512 and 256×256 WebP atlases but retain
 source bytes without correction. The 2026-07-18 Gold Wagon integration uses a
 separate reviewed runtime-output record below; browser code must never import
 these candidate paths or substitute them for the digest-bearing public outputs.
-The dated [Gold Mine candidate record](docs/reference/resources/2026-07-18-hegemony-gold-mine/)
+The dated Gold Mine candidate record (source: `docs/reference/resources/2026-07-18-hegemony-gold-mine/`)
 preserves the full historical boundary. All three remain
 `LicenseRef-Warpkeep-Provenance-Required` and do not independently create a live
 Gold balance, currency, reward, entitlement, or link to Community Marks.
@@ -221,7 +226,7 @@ The original candidate GLBs remain unchanged under `docs/reference/` as audit
 evidence. The checked-in output family is verified by
 `node scripts/verify-hegemony-gold-mine-runtime.mjs`; ordinary builds only
 verify it and never fetch or prepare the owner-supplied package. The dated
-[runtime record](docs/reference/resources/2026-07-18-hegemony-gold-mine/runtime/manifest.json)
+runtime record (source: `docs/reference/resources/2026-07-18-hegemony-gold-mine/runtime/manifest.json`)
 pins input/output hashes, the bounded metadata repair, orientation, and the
 visual-only scope boundary.
 
@@ -254,8 +259,8 @@ preserves their exact bytes and does not silently represent that delivery as a
 final release. `node scripts/verify-hegemony-wheat-farm-runtime-assets.mjs`
 fails closed on unknown, missing, non-regular, changed, reordered, or
 structurally incompatible LODs; ordinary builds never fetch, rewrite, or serve
-the external delivery package. The dated [Wheat Farm runtime
-record](docs/reference/resources/2026-07-18-hegemony-wheat-farm/runtime/manifest.json)
+the external delivery package. The dated Wheat Farm runtime
+record (source: `docs/reference/resources/2026-07-18-hegemony-wheat-farm/runtime/manifest.json`)
 pins the source-manifest facts, bounds, orientation, LOD budgets, collision
 guidance, and visual-only scope boundary. This family remains
 `LicenseRef-Warpkeep-Provenance-Required`.
@@ -278,7 +283,7 @@ authority to place a Food site, expose a balance, or activate gathering.
 The exact source attachment and image-generation/chroma-matte intermediates are
 not committed. Their hashes, transformation method, cleanup parameters,
 decoded RGBA hash, alpha profile, and visible bounds are recorded in the dated
-[Wheat Farm inspection-art record](docs/reference/resources/2026-07-18-hegemony-wheat-farm/record-art/manifest.json).
+Wheat Farm inspection-art record (source: `docs/reference/resources/2026-07-18-hegemony-wheat-farm/record-art/manifest.json`).
 The live integration mounts the card as decorative inspection art
 only; it grants no resource, currency, reward, entitlement, map-placement, or
 Food authority. No Pages deployment is authorized by this record.
@@ -301,8 +306,8 @@ settlement, timing, or SpacetimeDB authority.
 
 The exact source attachment and alpha-matte intermediate are not committed.
 Their hashes, transformation method, decoded RGBA hash, alpha profile, and
-visible bounds are recorded in the dated [Logging Camp inspection-art
-record](docs/reference/resources/2026-07-18-hegemony-logging-camp/record-art/manifest.json).
+visible bounds are recorded in the dated Logging Camp inspection-art
+record (source: `docs/reference/resources/2026-07-18-hegemony-logging-camp/record-art/manifest.json`).
 The live integration mounts the card as decorative inspection art
 only; it grants no resource, currency, reward, entitlement, map-placement, or
 Wood authority. No Pages deployment is authorized by this record.
@@ -323,7 +328,7 @@ resource, route, cargo, reward, settlement, or SpacetimeDB authority.
 
 The supplied source is not committed. Its exact hash, the runtime decoded-RGBA
 hash, alpha profile, visible bounds, processing settings, and narrow UI-only
-boundary are recorded in the dated [Worker inspection-art record](docs/reference/resources/2026-07-19-hegemony-worker/record-art/manifest.json).
+boundary are recorded in the dated Worker inspection-art record (source: `docs/reference/resources/2026-07-19-hegemony-worker/record-art/manifest.json`).
 The runtime file remains `LicenseRef-Warpkeep-Provenance-Required` and is loaded
 only as same-origin decorative art by `WorkerInspectionPanel`; it does not
 provide or imply identity, ownership, balance, command, or gameplay authority.
@@ -357,8 +362,8 @@ it rejects a changed, incomplete, non-regular, or symbolic source package and
 atomically installs exact source bytes without fetching or transforming them.
 `node scripts/verify-hegemony-logging-camp-runtime-assets.mjs` runs in ordinary
 builds and fails closed on unknown, missing, non-regular, changed, or
-structurally incompatible LODs. The dated [Logging Camp runtime
-record](docs/reference/resources/2026-07-18-hegemony-logging-camp/runtime/manifest.json)
+structurally incompatible LODs. The dated Logging Camp runtime
+record (source: `docs/reference/resources/2026-07-18-hegemony-logging-camp/runtime/manifest.json`)
 pins its source-manifest facts, orientation, bounds, LOD budgets, collision
 guidance, and visual-only scope boundary. This family remains
 `LicenseRef-Warpkeep-Provenance-Required`.
@@ -391,7 +396,7 @@ Node scripts/verify-hegemony-stone-quarry-runtime-assets.mjs fails closed on
 unknown, missing, non-regular, changed, reordered, or structurally
 incompatible LODs. Ordinary builds verify only the checked-in public family and
 never fetch, rewrite, or serve the owner-supplied delivery package. The dated
-[Stone Quarry runtime record](docs/reference/resources/2026-07-18-hegemony-stone-quarry/runtime/manifest.json)
+Stone Quarry runtime record (source: `docs/reference/resources/2026-07-18-hegemony-stone-quarry/runtime/manifest.json`)
 pins source-manifest facts, bounds, orientation, collision guidance, and the
 visual-only scope boundary. This family remains
 `LicenseRef-Warpkeep-Provenance-Required`.
@@ -418,7 +423,7 @@ route, dispatch, balance, settlement, or entitlement authority.
 The release ZIP is retained only in ignored local cache during manual
 preparation, never served as a runtime CDN. The checked-in output family is
 verified by `node scripts/verify-hegemony-supply-wagon-assets.mjs`; ordinary
-builds never fetch or rewrite it. The dated [Supply Wagon runtime record](docs/reference/factions/hegemony/2026-07-18-hegemony-supply-wagon/manifest.json)
+builds never fetch or rewrite it. The dated Supply Wagon runtime record (source: `docs/reference/factions/hegemony/2026-07-18-hegemony-supply-wagon/manifest.json`)
 pins the release, source, toolchain, output hashes, LOD budgets, rendering
 contract, and visual-only scope boundary.
 
@@ -443,7 +448,7 @@ trademark rights, or game-authority rights.
 The exact source GLBs are copied byte-for-byte; ordinary builds only run
 node scripts/verify-hegemony-tree-runtime-assets.mjs and never fetch,
 unpack, transform, or rewrite the supplied bundle. The
-[Environment Trees record](docs/reference/assets/2026-07-18-hegemony-environment-trees/)
+Environment Trees record (source: `docs/reference/assets/2026-07-18-hegemony-environment-trees/`)
 also records the source-manifest double-sided discrepancy: the 16
 species-library manifests say false, while all supplied GLBs actually have
 an opaque, double-sided material. Preserve the GLB bytes and renderer-facing
@@ -497,7 +502,7 @@ existing dated record; that permission does not extend to the three newly
 selected archive tree families. The complete allowlist, 38 asset records, 114
 model hashes, six preview hashes, exclusions, audit procedure, and exact owner
 decision are in the dated
-[Inner Keep asset selection record](docs/reference/assets/2026-08-02-inner-keep-3d-library/).
+Inner Keep asset selection record (source: `docs/reference/assets/2026-08-02-inner-keep-3d-library/`).
 
 ## Inner Keep citizens, mounts, and patrol units
 
@@ -531,7 +536,7 @@ rewards, or combat.
 
 The complete actor list, archive and manifest pins, per-file hashes, LODs,
 triangle counts, clip sets, installation policy, and exact authorization are in
-the dated [Inner Keep population selection record](docs/reference/assets/2026-08-04-inner-keep-population/).
+the dated Inner Keep population selection record (source: `docs/reference/assets/2026-08-04-inner-keep-population/`).
 
 ## Lowlands Rabbit wildlife runtime
 
@@ -565,7 +570,7 @@ use the Balanced rig by default; reduced quality and reduced motion use the
 Compact static LOD. The High rig is retained only as an explicit close-detail
 option. The complete release pins, source-member hashes, animation contract,
 three model digests, exclusions, and reproducible audit procedure are in the
-dated [Lowlands Rabbit runtime selection record](docs/reference/assets/2026-07-30-lowlands-rabbit/).
+dated Lowlands Rabbit runtime selection record (source: `docs/reference/assets/2026-07-30-lowlands-rabbit/`).
 
 ## Historical Hegemony Frontier Keep provenance
 
@@ -620,7 +625,7 @@ supplied package is never a runtime CDN. Reinstall only from an authorized
 exact package root with `WARPKEEP_CASTLE_GAMEREADY_ROOT` and
 `npm run prepare:hegemony-castle`, then run
 `npm run verify:runtime-assets`. The dated
-[GameReady castle record](docs/reference/castles/2026-07-16-hegemony-main-castle-gameready/)
+GameReady castle record (source: `docs/reference/castles/2026-07-16-hegemony-main-castle-gameready/`)
 preserves the exact inputs, outputs, correction boundary, and authorization.
 
 The 2026-07-15 public-source derivative set is superseded as the application
@@ -629,7 +634,7 @@ unhashed URLs for cached-client and verified-rollback compatibility.
 `scripts/prepare-hegemony-main-castle.mjs` is historical comparison tooling, not
 an installer for either the active or compatibility paths. Their immutable
 technical record remains in the
-[historical castle record](docs/reference/castles/2026-07-15-hegemony-main-castle/).
+historical castle record (source: `docs/reference/castles/2026-07-15-hegemony-main-castle/`).
 The GameReady geometry has accepted profile-relative size and height
 differences. This asset change does not itself claim brighter materials; castle
 lighting and palette remain renderer concerns.
@@ -669,7 +674,7 @@ never independently centered, normalized, grounded, or scaled; its below-ground
 skirt and `+Z` road direction are authored placement. The complete family is
 classified as `LicenseRef-Warpkeep-Provenance-Required`. Neither its location
 under `public/` nor metadata-only correction changes that status. The dated
-[GameReady landscape-base record](docs/reference/castles/2026-07-16-hegemony-castle-landscape-base-gameready/)
+GameReady landscape-base record (source: `docs/reference/castles/2026-07-16-hegemony-castle-landscape-base-gameready/`)
 preserves exact inputs, outputs, embedded-image hashes, placement contract,
 performance budgets, and authorization boundary.
 
@@ -691,7 +696,7 @@ derivatives or redistribution, or grant trademark or canonical-identity rights.
 The two source attachments and the generated chroma-key intermediate are not
 committed. Their exact hashes, the complete edit prompt, cleanup parameters,
 decoded RGBA hash, alpha profile, and visible bounds are recorded in the
-[dated castle record](docs/reference/castles/2026-07-16-hegemony-castle-record-art/).
+dated castle record (source: `docs/reference/castles/2026-07-16-hegemony-castle-record-art/`).
 The runtime file remains under `LicenseRef-Warpkeep-Provenance-Required`; neither
 its location in `public/` nor the cleanup operation silently relicenses it.
 
@@ -709,7 +714,7 @@ runtime asset.
 | Root README Alpha preview | `docs/reference/screenshots/2026-08-02-alpha-0.3.43-launch/warpkeep-alpha-0.3.43-genesis-001.png` | 1400×900 opaque RGB PNG, 1,592,990 bytes, SHA-256 `c4bf41748646fa6753c592ae7e0f2dd51bac39d8bc2e7893b7a868c25c16bc37`. |
 
 The screenshot remains `LicenseRef-Warpkeep-Provenance-Required` and is not a
-runtime dependency. Its [dated record](docs/reference/screenshots/2026-08-02-alpha-0.3.43-launch/)
+runtime dependency. Its dated record (source: `docs/reference/screenshots/2026-08-02-alpha-0.3.43-launch/`)
 preserves the exact capture boundary, privacy review, and technical identity.
 No general derivative or redistribution permission is granted. The superseded
 22 July Wheat Farm preview and its provenance record remain available in Git
