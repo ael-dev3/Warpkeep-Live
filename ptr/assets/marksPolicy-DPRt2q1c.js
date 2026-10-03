@@ -1,0 +1,1 @@
+var e=1000000n,t=`admitted-daily-mark-v1`,n=class extends Error{code;constructor(e){super(e),this.code=e,this.name=`MarksPolicyError`}};function r(t){if(t<0n||t>340282366920938463463374607431768211455n)throw new n(`MARK_BALANCE_OUT_OF_RANGE`);let r=t/e,i=t%e;return i===0n?r.toString():`${r.toString()}.${i.toString().padStart(6,`0`).replace(/0+$/,``)}`}export{r as n,t};

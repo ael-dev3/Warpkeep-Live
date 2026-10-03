@@ -1,0 +1,1 @@
+var e=/[\u0000-\u001f\u007f-\u009f]/g,t=/[\u00ad\u061c\u200b-\u200f\u202a-\u202e\u2060-\u2064\u2066-\u206f\ufeff]/g;function n(n,r=256){if(typeof n!=`string`||!Number.isSafeInteger(r)||r<=0||n.length>r*2)return;let i=n.replace(e,` `).replace(t,``).replace(/\s+/gu,` `).trim();return i&&[...i].length<=r?i:void 0}export{n as t};
